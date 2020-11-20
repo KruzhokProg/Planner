@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <DatePicker
+        android:id="@+id/dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00dac6"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddToDoItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:text="задача"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:strokeWidth="1dp"
+        android:onClick="btnAddToDoItem_click"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+<!--    <ListView-->
+<!--        android:id="@+id/toDoList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1" />-->
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lstvHead"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/toDoList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="-51dp"/>
+    <TextView
+        android:id="@+id/tvEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:text="Нет Задач"
+        android:textAlignment="center"
+        android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SqlLiteManyToMany</string>
+    <string-array name="spinner_default_items">
+        <item>низкий</item>
+        <item>средний</item>
+        <item>высокий</item>
+        <item>СОЗДАТЬ СВОЙ</item>
+    </string-array>
+</resources>
